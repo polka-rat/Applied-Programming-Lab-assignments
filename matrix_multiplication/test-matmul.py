@@ -75,11 +75,11 @@ class TestMatrixMultiplication(unittest.TestCase):
         expected_result = [[1, 2], [3, 4]]
         self.assertEqual(matrix_multiply(matrix1, identity_matrix), expected_result)
 
-    # def test_stress_test(self):
-    #     size = 1000
-    #     matrix = []
-    #     for i in range(size):
-    #         matrix.append([1] * size)  # Simplified matrix creation
+    def test_stress_test(self):
+        size = 1000
+        matrix = []
+        for i in range(size):
+            matrix.append([1] * size)  # Simplified matrix creation
 
     #     # Convert to NumPy array
     #     matrix_np = np.array(matrix)
